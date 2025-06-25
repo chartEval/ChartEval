@@ -1,4 +1,5 @@
 ChartEval: LLM-Driven Chart Generation Evaluation Using Scene Graph Parsing
+
 Demo Page for ChartEval (submission to CIKM 2025 - Demo Track)
 
 Demo Video: 
