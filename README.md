@@ -4,4 +4,4 @@ Demo Page for ChartEval (submission to CIKM 2025 - Demo Track)
 
 Demo Video: https://youtu.be/HcPuJaVO04s
 
-Live Demo Link: https://b1adc64eec2a8b9c11.gradio.live/
+Live Demo Link: https://4c69e792d229a69671.gradio.live/
