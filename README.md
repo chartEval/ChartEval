@@ -37,7 +37,7 @@ Instead of treating charts as mere images or data tables, ChartEval views charts
 - Easy switching between providers with unified interface
 
 ### Multiple Chart Types
-- Line charts, Bar charts, Pie charts, Scatter plots
+- Line charts, Bar charts, Pie charts, Scatter plots...
 - 2D and 3D visualizations
 - Support for complex multi-series data
 
@@ -96,7 +96,7 @@ Instead of treating charts as mere images or data tables, ChartEval views charts
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/charteval.git
+git clone https://github.com/chartEval/charteval.git
 cd charteval
 ```
 
