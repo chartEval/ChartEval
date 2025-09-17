@@ -3,7 +3,7 @@
 A comprehensive chart evaluation system that compares generated chart images with ground truth using advanced scene graph parsing and LLM-driven analysis.
 
 Demo Video: https://youtu.be/HcPuJaVO04s
-Live Demo Link: https://d97c12eb37eaeba040.gradio.live
+Live Demo Link: [https://d97c12eb37eaeba040.gradio.live](https://huggingface.co/spaces/Kanika7/chart_eval)
 
 ## Overview
 
