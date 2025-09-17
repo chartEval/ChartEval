@@ -263,96 +263,10 @@ ChartEval demonstrates **significantly stronger correlation with human judgments
 *Pearson correlation coefficients with human quality ratings across 4K chart evaluations*
 
 ### Performance Highlights
-- **38-203% improvement** over existing metrics
+- **Strong Improvement** over existing metrics
 - **Consistent performance** across chart types (line, bar, pie, scatter)
 - **Robust evaluation** across different LLM generators (GPT-4o, Claude, Qwen2.5-VL)
 - **High inter-annotator agreement** (α = 0.74-0.85) in human evaluation
-
-## Examples
-
-### Example 1: High-Quality Chart Match
-
-**Input:**
-- Ground Truth: Line chart showing maternal mortality rate (2010-2013)
-- Predicted: Nearly identical chart with minor styling differences
-
-**ChartEval Results:**
-```
-GraphBERT F1: 0.94
-Hallucination Rate: 0.02  
-Omission Rate: 0.01
-Normalized GED: 0.15
-
-Assessment: Excellent semantic preservation with minimal visual differences
-```
-
-### Example 2: Data Hallucination Detection
-
-**Input:**
-- Ground Truth: Bar chart with 4 data points
-- Predicted: Similar chart but with extra data point added
-
-**ChartEval Results:**
-```
-GraphBERT F1: 0.73
-Hallucination Rate: 0.25 ← Correctly identifies spurious data
-Omission Rate: 0.03
-Normalized GED: 0.31
-
-Assessment: Structural similarity but significant data hallucination detected
-```
-
-### Example 3: Missing Information
-
-**Input:** 
-- Ground Truth: Pie chart with 6 segments and labels
-- Predicted: Pie chart missing 2 segments and some labels
-
-**ChartEval Results:**
-```
-GraphBERT F1: 0.61
-Hallucination Rate: 0.08
-Omission Rate: 0.35 ← Correctly identifies missing elements  
-Normalized GED: 0.42
-
-Assessment: Major information omissions significantly impact chart completeness
-```
-
-## Input Format Examples
-
-### Supported Chart Types
-
-**Line Charts**
-```
-- Time series data
-- Multiple series
-- Trend analysis
-- Temporal patterns
-```
-
-**Bar Charts**
-```  
-- Categorical comparisons
-- Horizontal/vertical orientation
-- Grouped/stacked bars
-- Statistical distributions
-```
-
-**Pie Charts**
-```
-- Percentage breakdowns
-- Market share analysis  
-- Categorical proportions
-- Donut variations
-```
-
-**Scatter Plots**
-```
-- Correlation analysis
-- Data point relationships
-- Trend identification
-- Multi-dimensional data
-```
 
 ### Image Requirements
 - **Format**: PNG, JPG, JPEG
@@ -360,36 +274,11 @@ Assessment: Major information omissions significantly impact chart completeness
 - **Quality**: Clear, readable text and labels
 - **Content**: Single chart per image
 
-## Limitations
-
-### Current Limitations
-1. **Image Quality Dependency**: Performance degrades with low-resolution images (<400x300)
-2. **Complex Chart Support**: Limited support for highly complex multi-panel visualizations
-3. **3D Chart Analysis**: Reduced accuracy for complex 3D surface plots
-4. **Processing Time**: Analysis takes 60-90 seconds per chart pair due to LLM inference
-
 ### Future Improvements
 - Fine-tuning VLMs for low-resolution chart images
 - Enhanced 3D chart parsing capabilities  
 - Faster inference through model optimization
 - Support for additional chart types (sankey, treemap, etc.)
-
-## Contributing
-
-We welcome contributions! Please see our contributing guidelines.
-
-### Development Setup
-```bash
-git clone https://github.com/your-username/charteval.git
-cd charteval
-pip install -e .
-pip install -r requirements-dev.txt
-```
-
-### Running Tests
-```bash
-pytest tests/
-```
 
 ## License
 
@@ -408,12 +297,5 @@ If you use ChartEval in your research, please cite our paper:
 }
 ```
 
-## Support
-
-- **Demo**: chartEval.ai
-- **Issues**: GitHub Issues
-- **Discussions**: GitHub Discussions
-
----
 
 **Ready to evaluate your chart generation system?** Get started with our online demo or follow the installation guide above!
